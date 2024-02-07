@@ -11,6 +11,7 @@
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
+<!--    methanta update / create / create-drop / validate danna option denn puluwan-->
 
     <mapping class="lk.ijse.entity.Student"></mapping>
 <!--    meken wenne session ek ganna thana ntuw entity class ek map krgnnwa hibernate wlt-->

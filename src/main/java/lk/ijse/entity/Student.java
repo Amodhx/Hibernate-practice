@@ -21,10 +21,17 @@ import javax.lang.model.element.Name;
 * mulu column okkogema values change weddi eekta time ekk add wenwa*/
 public class Student {
     @Id // api primary key ek pennanna oni table ek hdaddima
+//    @GeneratedValue eke defualt enne auto apit onnm puluwan wens krnn
 //    @GeneratedValue (Strategy = GenerationType.IDENTITY) identity dammama api normal widihata id ek wens krnn oni
 //    @GeneratedValue (Strategy = GenerationType.AUTO) auto dammama e id eka auto increment wenawa
 //    @Column (name = "ID" , nullable = false) meken dammama propety name eken ntuw column name ek wtenne dana name eken
 //    nullable false krma wenne notnull wena ek column eka
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "Student_sequence")
+    @SequenceGenerator(
+            name = "Student_sequence",
+            initialValue = 1,
+            sequenceName = "st_seq",
+            allocationSize = 1)
     private int id;
 
     private Fullname name;
