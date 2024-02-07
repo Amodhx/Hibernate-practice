@@ -12,6 +12,8 @@ public class FactoryConfiguration {
     private FactoryConfiguration() {
         Configuration configuration = new Configuration().configure()
                 .addAnnotatedClass(Student.class);
+        /*api methana eka class eken classs ekt mapping krnne ntuw apita puluwan configuration.xml file
+        * eke add krnna*/
         sessionFactory = configuration.buildSessionFactory();
     }
      public static FactoryConfiguration getFactoryConfiguration(){
