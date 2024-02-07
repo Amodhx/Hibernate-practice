@@ -6,6 +6,7 @@ import lk.ijse.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.io.Serializable;
 import java.sql.Connection;
 import java.util.ArrayList;
 
@@ -35,11 +36,12 @@ public class Main {
 
 //        Save
         Student student = new Student();
-        student.setId(0);
+        student.setId(4);
         Fullname fullname = new Fullname("AD","asd");
         student.setName(fullname);
         student.setAddress("Kaluthara");
-        //session.save(student);
+//        Serializable save = (Serializable) session.save(student);
+//        System.out.println("bshuabdadna  :"+save);
         //transaction.commit();
         //session.close();
 
