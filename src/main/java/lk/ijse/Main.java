@@ -34,12 +34,11 @@ public class Main {
 
 //        06) crud operations
 
-//        Save
-        Student student = new Student();
-        student.setId(4);
+//        SavsStudent student = new Student();
+        /*student.setId(4);
         Fullname fullname = new Fullname("AD","asd");
         student.setName(fullname);
-        student.setAddress("Kaluthara");
+        student.setAddress("Kaluthara");*/
 //        Serializable save = (Serializable) session.save(student);
 //        System.out.println("bshuabdadna  :"+save);
         //transaction.commit();
@@ -62,5 +61,6 @@ public class Main {
         System.out.println(session.find(Student.class, 0));
         Student student1 = session.get(Student.class,1);
         System.out.println(student1);
+
     }
 }
